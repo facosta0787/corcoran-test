@@ -1,0 +1,11 @@
+{
+  "name": "prueba-corcoran",
+  "version": "1.0.0",
+  "description": "Test corcoran account - globant",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Felipe Acosta",
+  "license": "MIT"
+}

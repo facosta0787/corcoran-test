@@ -1,0 +1,27 @@
+$white: #fff;
+$gray: #343a40;
+
+.menu {
+  display: flex;
+  align-items: center;
+  height: 70px;
+
+  button {
+    cursor: pointer;
+    color: $gray;
+    font-weight: bold;
+    letter-spacing: 0.3px;
+    background-color: $white;
+    border-color: $gray;
+    margin: 0px 10px;
+    padding: 10px 20px;
+    border-radius: 0.3rem;
+    outline: none;
+    transition: background-color 0.3s;
+
+    &:hover {
+      color: $white;
+      background-color: $gray;
+    }
+  }
+}

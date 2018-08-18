@@ -1,0 +1,30 @@
+$gray: #343a40;
+
+.table {
+  width: 100%;
+  border-spacing: 0px;
+  border-collapse: collapse;
+  box-sizing: border-box;
+
+  th, td {
+    padding: .75rem;
+    border-top: 1px solid #dee2e6;
+  }
+
+  .table__head {
+    letter-spacing: 0.5px;
+    color: white;
+    background-color: $gray;
+  }
+
+  .table__body {
+    color: #212529;
+
+    .body__row {
+      cursor: pointer;
+      &:hover {
+        background-color: #dee2e6;
+      }
+    }
+  }
+}

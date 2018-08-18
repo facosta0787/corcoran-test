@@ -1,0 +1,29 @@
+$medium-screen: 768px;
+$large-screen: 1024px;
+$xlarge-screen: 1270px;
+
+.container__layout {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  .container__content {
+    width: 98%;
+    transition: width 0.5s;
+    font-size: 0.8rem;
+
+    @media (min-width: $medium-screen) {
+      width: 93%;
+      font-size: 0.8rem;
+    }
+
+    @media (min-width: $large-screen){
+      width: 90%;
+      font-size: 0.9rem;
+    }
+
+    @media (min-width: $xlarge-screen){
+      width: 80%;
+      font-size: 1rem;
+    }
+  }
+}

@@ -1,5 +1,5 @@
 import axios from 'axios'
-const BASE_URL = 'http://localhost:5000/api/presidents'
+const BASE_URL = 'https://presidentsapi.azurewebsites.net/api/presidents'
 
 class president {
 

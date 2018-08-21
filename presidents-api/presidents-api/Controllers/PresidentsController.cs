@@ -11,12 +11,19 @@ namespace presidents_api.Controllers
     [Route("api/[controller]")]
     public class PresidentsController : Controller
     {
+        private IPresidentService presidentService;
+
+        public PresidentsController(IPresidentService presidentService)
+        {
+            this.presidentService = presidentService;
+        }
+
         // GET api/presidents
         [HttpGet("{sort?}")]
         public string Get(string sort = "")
         {
             Logger.write(sort);
-            var response = PresidentsService.getAll();
+            var response = presidentService.GetAll();
             PresidentsAdapter adapter = new PresidentsAdapter();
             IList<President> presidents = adapter.jsontoList(response);
             if (sort.Equals("asc"))
